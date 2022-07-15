@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a83993f8da.js" crossorigin="anonymous"></script>
+    <title>Parfume card</title>
+</head>
+<style>
+    @import url(https://fonts.google.com/specimen/Montserrat);
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    width: 500px;
+    margin: 9rem auto;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+aside{
+    display: flex;
+    justify-content: flex-start;
+}
+button {
+    width: 200px;
+    background-color: #3e816a;
+    color: #ffffff;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+.price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+span{
+    text-decoration: line-through;
+}
+@media screen and(max-width:575px) {
+    #btn{
+        background-color: red;
+        color: black;
+    }
+}
+
+@media screen and(max-width:1440px) {
+    .container {
+        background-color: red;
+        color: black;
+    } 
+} 
+</style>
+<body>
+    <div class="container">
+        <img src="./img/image-product-desktop.jpg" width="250px" />
+        <section>
+            <aside> <p id="parfume">PERFUME</p></aside>
+            <h2>Preview Gabrielle Essence Eau De Parfum</h2>
+            <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+            <div class="price"><h2 style="color: #3e816a;">$149.99 </h2><span> $169.99</span></div>
+            <button id="btn"><i class="fa-regular fa-cart-circle-check"></i>Add to Cart</button>
+            
+        </section>
+    </div>
+
+</body>
+
+</html>
